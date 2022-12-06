@@ -3,7 +3,7 @@ def newBoard(n)
     for i in 0..n
         tab.push([])
         for j in 0..n
-            tab[j].push('0')
+            tab[i].push(j)
         end
     end
     return tab
