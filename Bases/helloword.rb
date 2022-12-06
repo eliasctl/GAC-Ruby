@@ -3,10 +3,20 @@ def newBoard(n)
     for i in 0..n
         tab.push([])
         for j in 0..n
-            tab[j].push(0)
+            tab[j].push('0')
         end
     end
     return tab
+end
+
+
+def affTab(tab, n)
+    for i in 0..n
+        for j in 0..n
+            puts tab[i][j]
+        end
+        puts "\n"
+    end
 end
 
 
@@ -17,5 +27,5 @@ end
 
 puts "Enter la taille du tableau "
 taille = gets.chomp.to_i
-puts taille
-newBoard(taille)
+tab = newBoard(taille)
+affTab(tab, taille)
