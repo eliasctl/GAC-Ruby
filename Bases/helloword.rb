@@ -1,3 +1,5 @@
+puts "Hello World !"
+
 def newBoard(n)
     tab = []
     for i in 0..n
